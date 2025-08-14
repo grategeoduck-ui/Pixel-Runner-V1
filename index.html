@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Pixel Runner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game" width="320" height="180"></canvas>
+    <div id="hud">
+      <div class="hud-left">
+        <span id="hud-world">Welt 1-1</span>
+      </div>
+      <div class="hud-right">
+        <span>Münzen: <span id="hud-coins">0</span></span>
+        <span>Leben: <span id="hud-lives">3</span></span>
+      </div>
+    </div>
+
+    <!-- Touch controls -->
+    <div id="touch-controls">
+      <div class="cluster left">
+        <button id="btn-left" aria-label="Links">&#9664;</button>
+        <button id="btn-right" aria-label="Rechts">&#9654;</button>
+      </div>
+      <div class="cluster right">
+        <button id="btn-jump" aria-label="Springen">⤒</button>
+        <button id="btn-pause" aria-label="Pause">II</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
